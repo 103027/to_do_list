@@ -1,0 +1,134 @@
+body{
+    background-color: #FF6B4C;
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    border: 2px solid #D02400;
+    border-radius: 20px;
+    background-color: #e6e6e6;
+}
+
+h3{
+    font-size: 30px;
+}
+
+button[id="start-btn"]{
+    padding: 10px;
+    width: 20%;
+    height: 30%;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+button[id="start-btn"]:hover{
+    cursor: pointer;
+    transform: scale(1.3,1.2);
+}
+
+h1{
+    font-size: 50px;
+}
+
+.question-container{
+    width: 40vw;
+}
+
+h4{
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="radio"]{
+    margin: 20px;
+    size: 50px;
+}
+
+span{
+    color: #46484B;
+}
+
+.question-container button{
+    background-color: green;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    color: white;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+span[id="time"]{
+    color: red;
+}
+
+ul:has(li[id="result"]){
+    align-items: center;
+}
+
+span[id="Qs"], span[id="percent"],span[id="correct"],span[id="wrong"]{
+    font-size: 30px;
+
+}
+
+h5{
+    color: red;
+    align-self: center;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0); /* Starting position and actual size */
+    }
+    30% {
+        transform: scale(1.1, 0.9) translateY(0); /* Grow width and shrink height for pre-bounce squash effect */
+    }
+    50% {
+        transform: scale(1, 1) translateY(-6rem); /* Return to actual size and move emoji up 100px from current position */
+    }
+    70% {
+        transform: scale(1, 1) translateY(0); /* Move emoji back to starting position */
+    }
+    90% {
+        transform: scale(1, 1) translateY(0); /* Starting position and actual size */
+    }
+    100% {
+        transform: scale(1.1, 0.9) translateY(0); /* Grow width and shrink height for pre-bounce squash effect */
+    }
+}
+
+img{
+    width: 150px;
+    height: 120px;
+    margin-bottom: 50px;
+    animation-name: bounce;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+img:hover{
+    transform: scaleX(-1);
+}
+
